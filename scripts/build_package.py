@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Vortex translation ZIP and the optional extension patch artifact."""
+"""Build the Vortex translation ZIP, including the optional extension patch."""
 
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -32,6 +32,9 @@ def main() -> None:
     package_locale.mkdir(parents=True)
     shutil.copytree(LOCALE, package_locale, dirs_exist_ok=True)
     shutil.copy2(README, PACKAGE / "read-me.txt")
+    package_patch = PACKAGE / "patches" / "modlist-backup" / "index.js"
+    package_patch.parent.mkdir(parents=True)
+    shutil.copy2(PATCH, package_patch)
 
     archive = DIST / f"Vortex_PT-BR_{version}.zip"
     with ZipFile(archive, "w", ZIP_DEFLATED) as zip_file:
@@ -39,9 +42,7 @@ def main() -> None:
             if path.is_file():
                 zip_file.write(path, path.relative_to(PACKAGE).as_posix())
 
-    shutil.copy2(PATCH, DIST / f"Modlist_Backup_index_{version}.js")
     print(f"Created {archive.relative_to(ROOT)}")
-    print(f"Created {(DIST / f'Modlist_Backup_index_{version}.js').relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

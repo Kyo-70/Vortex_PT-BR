@@ -7,7 +7,7 @@ Projeto comunitário para manter a tradução PT-BR do Vortex organizada, fácil
 - Arquivos de idioma do Vortex em **resources/locales/pt-BR**.
 - Arquivo **common.json** reservado às strings do Vortex.
 - Tradução experimental da extensão **Modlist Backup** em **modlist-backup.json**, separada do idioma principal.
-- Patch opcional para a extensão Modlist Backup.
+- Patch opcional para a extensão Modlist Backup, incluído dentro do ZIP.
 - Launcher gráfico para verificar atualizações e instalar a tradução no Windows.
 - Scripts para validar os JSONs, gerar o pacote e instalar os arquivos localmente.
 
@@ -25,11 +25,11 @@ Créditos da tradução base: Rikintosh e PabloFub. Manutenção e organização
 
 O launcher é uma janela gráfica, sem terminal. Ele precisa de conexão com a internet para consultar e baixar a versão mais recente. Se o Vortex estiver em uma pasta protegida do Windows, ele oferece a opção de reiniciar como administrador.
 
-O patch experimental do **Modlist Backup** é opcional. Marque essa opção no launcher e selecione o **index.js** da extensão. O arquivo original será preservado em backup.
+O patch experimental do **Modlist Backup** é opcional. Marque essa opção no launcher e selecione o **index.js** da extensão. O patch vem dentro do mesmo ZIP da tradução, e o arquivo original será preservado em backup.
 
 ### Pelo ZIP (instalação manual)
 
-Baixe **Vortex_PT-BR_*.zip** em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases), extraia o conteúdo e copie a pasta **pt-BR** para **resources/locales** da instalação do Vortex. O resultado deve ser **resources/locales/pt-BR/info.json**.
+Baixe **Vortex_PT-BR_*.zip** em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases) e extraia o conteúdo. Copie a pasta **pt-BR** para **resources/locales** da instalação do Vortex. O ZIP também contém o patch em **patches/modlist-backup/index.js** e o arquivo de instruções.
 
 Se estiver trabalhando a partir do código-fonte deste repositório, copie **resources/locales/pt-BR** para dentro de **Vortex/resources/locales**. A pasta **pt-BR** precisa ficar ao lado da pasta **en**.
 
@@ -48,7 +48,7 @@ Para aplicar manualmente:
 
 1. Copie **modlist-backup.json** para a pasta **pt-BR** dentro de **resources/locales** do Vortex.
 2. Faça uma cópia do **index.js** original da extensão.
-3. Substitua o **index.js** da extensão pelo arquivo deste repositório em **patches/modlist-backup/index.js**.
+3. Substitua o **index.js** da extensão pelo arquivo **patches/modlist-backup/index.js** extraído do ZIP.
 4. Reinicie o Vortex.
 
 O suporte à extensão é experimental. Se uma atualização da extensão mudar seu código, reaplique o patch apenas depois de conferir as alterações com a nova versão.
@@ -80,11 +80,11 @@ O suporte à extensão é experimental. Se uma atualização da extensão mudar 
 
 Consulte **CONTRIBUTING.md** para adicionar strings, preservar variáveis de substituição e validar alterações.
 
-O pacote ZIP é criado em **dist** por **scripts/build-package.bat**. O GitHub Actions compila o launcher para Windows x64 e o anexa às releases como **Vortex_PT-BR_Launcher.exe**.
+O pacote ZIP com a tradução e o patch opcional é criado em **dist** por **scripts/build-package.bat**. Cada release contém somente **Vortex_PT-BR_*.zip** e **Vortex_PT-BR_Launcher.exe**. O launcher também recebe um ícone próprio no build para Windows x64.
 
 Ao publicar uma versão, atualize o campo **version** de **resources/locales/pt-BR/info.json** e envie uma tag no formato **v1.6.15**. O GitHub Actions valida os arquivos, cria os pacotes, publica a release e compila o launcher.
 
-Para publicar o launcher numa tag já criada, envie as alterações para **main** e execute **Actions > Validate and build translation > Run workflow**. Informe a tag no campo **release_tag** (por exemplo, **v1.6.14**). O workflow cria a release com o ZIP e o patch caso ela ainda não exista, compila o launcher e o anexa.
+Para publicar o launcher numa tag já criada, envie as alterações para **main** e execute **Actions > Validate and build translation > Run workflow**. Informe a tag no campo **release_tag** (por exemplo, **v1.6.14**). O workflow cria ou atualiza a release com o ZIP e o executável; o patch do Modlist fica dentro do ZIP.
 
 ## Origem
 

@@ -8,6 +8,7 @@
     <AssemblyName>Vortex_PT-BR_Launcher</AssemblyName>
     <RootNamespace>VortexPtBrLauncher</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>vortex-ptbr.ico</ApplicationIcon>
     <Version>1.0.0</Version>
   </PropertyGroup>
 </Project>

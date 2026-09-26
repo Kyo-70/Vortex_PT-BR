@@ -203,20 +203,10 @@ internal sealed class LauncherForm : Form
             if (localeAsset.ValueKind == JsonValueKind.Undefined)
                 throw new InvalidDataException("A última release ainda não contém o pacote ZIP do idioma.");
 
-            var patchAsset = assets.FirstOrDefault(asset =>
-            {
-                var name = asset.GetProperty("name").GetString() ?? "";
-                return name.StartsWith("Modlist_Backup_index_", StringComparison.OrdinalIgnoreCase)
-                    && name.EndsWith(".js", StringComparison.OrdinalIgnoreCase);
-            });
-
             var version = tag.TrimStart('v', 'V');
             var zipUrl = localeAsset.GetProperty("browser_download_url").GetString()
                 ?? throw new InvalidDataException("Não foi encontrado o link do pacote ZIP.");
-            var patchUrl = patchAsset.ValueKind == JsonValueKind.Undefined
-                ? null
-                : patchAsset.GetProperty("browser_download_url").GetString();
-            _release = new ReleaseInfo(version, zipUrl, patchUrl, root.GetProperty("html_url").GetString());
+            _release = new ReleaseInfo(version, zipUrl, root.GetProperty("html_url").GetString());
             _latestVersion.Text = $"Disponível: {_release.Version}";
             RefreshInstalledVersion();
             var installed = ReadInstalledVersion();
@@ -274,12 +264,6 @@ internal sealed class LauncherForm : Form
 
         if (_installModlistPatch.Checked)
         {
-            if (string.IsNullOrWhiteSpace(_release.ModlistPatchUrl))
-            {
-                MessageBox.Show(this, "Esta release não inclui o patch do Modlist Backup.", "Patch indisponível",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
             if (!File.Exists(_modlistIndexPath.Text))
             {
                 BrowseModlistIndex();
@@ -299,14 +283,18 @@ internal sealed class LauncherForm : Form
         {
             SetStatus("Baixando os arquivos da tradução...");
             var archiveBytes = await DownloadAsync(_release.LocaleZipUrl);
+            var patchBytes = _installModlistPatch.Checked
+                ? ReadModlistPatchFromArchive(archiveBytes)
+                : null;
+            if (_installModlistPatch.Checked && patchBytes is null)
+                throw new InvalidDataException("O ZIP baixado não contém o patch do Modlist Backup.");
+
             SetStatus("Instalando os arquivos do Vortex...");
             var installedVersion = await Task.Run(() => InstallLocaleArchive(archiveBytes, localePath));
 
             var patchMessage = "";
-            if (_installModlistPatch.Checked && _release.ModlistPatchUrl is not null)
+            if (patchBytes is not null)
             {
-                SetStatus("Baixando o patch do Modlist Backup...");
-                var patchBytes = await DownloadAsync(_release.ModlistPatchUrl);
                 InstallModlistPatch(patchBytes, _modlistIndexPath.Text);
                 patchMessage = " O patch do Modlist Backup também foi aplicado.";
             }
@@ -320,7 +308,7 @@ internal sealed class LauncherForm : Form
         catch (Exception ex)
         {
             SetStatus($"Não foi possível concluir a instalação: {ex.Message}");
-            var elevate = ex is UnauthorizedAccessException || ex is IOException;
+            var elevate = IsAccessDenied(ex);
             if (elevate && MessageBox.Show(this,
                     "O Windows bloqueou a gravação na pasta do Vortex. Deseja reabrir o launcher como administrador?",
                     "Permissão necessária", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -367,12 +355,14 @@ internal sealed class LauncherForm : Form
         if (localeEntries.Length == 0)
             throw new InvalidDataException("O pacote baixado não contém a pasta pt-BR.");
 
-        var tempRoot = Path.Combine(Path.GetTempPath(), "Vortex_PT-BR_" + Guid.NewGuid().ToString("N"));
+        // Stage on the same volume as resources/locales so Directory.Move remains valid
+        // even when Windows TEMP is on another drive from the Vortex installation.
+        var tempRoot = Path.Combine(localesPath, ".Vortex_PT-BR_" + Guid.NewGuid().ToString("N"));
         var stagedLocale = Path.Combine(tempRoot, "pt-BR");
-        Directory.CreateDirectory(stagedLocale);
         string? version = null;
         try
         {
+            Directory.CreateDirectory(stagedLocale);
             foreach (var entry in localeEntries)
             {
                 var relative = entry.FullName[prefix.Length..].Replace('/', Path.DirectorySeparatorChar);
@@ -408,6 +398,20 @@ internal sealed class LauncherForm : Form
         {
             if (Directory.Exists(tempRoot)) Directory.Delete(tempRoot, recursive: true);
         }
+    }
+
+    private static byte[]? ReadModlistPatchFromArchive(byte[] bytes)
+    {
+        using var input = new MemoryStream(bytes);
+        using var archive = new ZipArchive(input, ZipArchiveMode.Read);
+        var patchEntry = archive.Entries.FirstOrDefault(entry =>
+            string.Equals(entry.FullName, "patches/modlist-backup/index.js", StringComparison.OrdinalIgnoreCase));
+        if (patchEntry is null) return null;
+
+        using var patchStream = patchEntry.Open();
+        using var output = new MemoryStream();
+        patchStream.CopyTo(output);
+        return output.Length == 0 ? null : output.ToArray();
     }
 
     private static void InstallModlistPatch(byte[] bytes, string indexPath)
@@ -510,6 +514,12 @@ internal sealed class LauncherForm : Form
 
     private static bool IsVortexRunning() => Process.GetProcessesByName("Vortex").Length > 0;
 
+    private static bool IsAccessDenied(Exception exception)
+    {
+        if (exception is UnauthorizedAccessException) return true;
+        return exception is IOException io && (io.HResult & 0xFFFF) == 5;
+    }
+
     private void RelaunchAsAdministrator()
     {
         try
@@ -553,7 +563,7 @@ internal sealed class LauncherForm : Form
     }
 }
 
-internal sealed record ReleaseInfo(string Version, string LocaleZipUrl, string? ModlistPatchUrl, string? ReleasePageUrl);
+internal sealed record ReleaseInfo(string Version, string LocaleZipUrl, string? ReleasePageUrl);
 
 internal static class VortexLocator
 {
