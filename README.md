@@ -84,7 +84,7 @@ O pacote ZIP é criado em **dist** por **scripts/build-package.bat**. O GitHub A
 
 Ao publicar uma versão, atualize o campo **version** de **resources/locales/pt-BR/info.json** e envie uma tag no formato **v1.6.15**. O GitHub Actions valida os arquivos, cria os pacotes, publica a release e compila o launcher.
 
-Para anexar o launcher a uma release que já existe, envie as alterações para **main** e execute **Actions > Validate and build translation > Run workflow**. Informe a tag no campo **release_tag** (por exemplo, **v1.6.14**). O workflow compila o launcher e o adiciona à release escolhida.
+Para publicar o launcher numa tag já criada, envie as alterações para **main** e execute **Actions > Validate and build translation > Run workflow**. Informe a tag no campo **release_tag** (por exemplo, **v1.6.14**). O workflow cria a release com o ZIP e o patch caso ela ainda não exista, compila o launcher e o anexa.
 
 ## Origem
 
