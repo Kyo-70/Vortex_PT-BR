@@ -8,17 +8,28 @@ Projeto comunitário para manter a tradução PT-BR do Vortex organizada, fácil
 - Arquivo **common.json** reservado às strings do Vortex.
 - Tradução experimental da extensão **Modlist Backup** em **modlist-backup.json**, separada do idioma principal.
 - Patch opcional para a extensão Modlist Backup.
+- Launcher gráfico para verificar atualizações e instalar a tradução no Windows.
 - Scripts para validar os JSONs, gerar o pacote e instalar os arquivos localmente.
 
 Créditos da tradução base: Rikintosh e PabloFub. Manutenção e organização deste repositório: Kyo-70.
 
 ## Instalação da tradução do Vortex
 
-1. Baixe o ZIP mais recente em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases). Enquanto ainda não houver uma release publicada, use o artefato **Vortex-PT-BR** da última execução bem-sucedida em [Actions](https://github.com/Kyo-70/Vortex_PT-BR/actions).
-2. Extraia o conteúdo.
-3. Copie a pasta **pt-BR** para a pasta **resources/locales** da instalação do Vortex. O resultado deve ser **resources/locales/pt-BR/info.json**.
-4. Reinicie o Vortex.
-5. Abra as configurações de idioma e escolha **Português (Brasil)**.
+### Pelo launcher (recomendado)
+
+1. Baixe **Vortex_PT-BR_Launcher.exe** em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases).
+2. Abra o launcher. Ele consulta a última versão, mostra a versão instalada e tenta localizar automaticamente o Vortex.
+3. Se a pasta não for localizada, clique em **Localizar...** e selecione a pasta do Vortex ou **resources/locales**.
+4. Clique em **Instalar / Atualizar**. Se já existir uma pasta **pt-BR**, ela será preservada em uma cópia de segurança.
+5. Reinicie o Vortex e selecione **Português (Brasil)** nas configurações de idioma.
+
+O launcher é uma janela gráfica, sem terminal. Ele precisa de conexão com a internet para consultar e baixar a versão mais recente. Se o Vortex estiver em uma pasta protegida do Windows, ele oferece a opção de reiniciar como administrador.
+
+O patch experimental do **Modlist Backup** é opcional. Marque essa opção no launcher e selecione o **index.js** da extensão. O arquivo original será preservado em backup.
+
+### Pelo ZIP (instalação manual)
+
+Baixe **Vortex_PT-BR_*.zip** em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases), extraia o conteúdo e copie a pasta **pt-BR** para **resources/locales** da instalação do Vortex. O resultado deve ser **resources/locales/pt-BR/info.json**.
 
 Se estiver trabalhando a partir do código-fonte deste repositório, copie **resources/locales/pt-BR** para dentro de **Vortex/resources/locales**. A pasta **pt-BR** precisa ficar ao lado da pasta **en**.
 
@@ -60,14 +71,20 @@ O suporte à extensão é experimental. Se uma atualização da extensão mudar 
       build_package.py
       install-local.bat
       validate-locales.py
+    installer/
+      Program.cs
+      VortexPtBrLauncher.csproj
+      app.manifest
 
 ## Manutenção
 
 Consulte **CONTRIBUTING.md** para adicionar strings, preservar variáveis de substituição e validar alterações.
 
-O pacote ZIP para instalar pelo Vortex é criado em **dist** por **scripts/build-package.bat**. No Windows, também é possível executar **scripts/install-local.bat** para copiar o idioma diretamente para a instalação local.
+O pacote ZIP é criado em **dist** por **scripts/build-package.bat**. O GitHub Actions compila o launcher para Windows x64 e o anexa às releases como **Vortex_PT-BR_Launcher.exe**.
 
-Ao publicar uma versão, atualize o campo version de **resources/locales/pt-BR/info.json** e envie uma tag no formato **v1.6.14**. O GitHub Actions valida os arquivos, cria os pacotes e publica os anexos da release.
+Ao publicar uma versão, atualize o campo **version** de **resources/locales/pt-BR/info.json** e envie uma tag no formato **v1.6.15**. O GitHub Actions valida os arquivos, cria os pacotes, publica a release e compila o launcher.
+
+Para anexar o launcher a uma release que já existe, envie as alterações para **main** e execute **Actions > Validate and build translation > Run workflow**. Informe a tag no campo **release_tag** (por exemplo, **v1.6.14**). O workflow compila o launcher e o adiciona à release escolhida.
 
 ## Origem
 
