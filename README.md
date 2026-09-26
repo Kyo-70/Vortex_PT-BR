@@ -14,7 +14,7 @@ Créditos da tradução base: Rikintosh e PabloFub. Manutenção e organização
 
 ## Instalação da tradução do Vortex
 
-1. Baixe o arquivo ZIP mais recente em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases).
+1. Baixe o ZIP mais recente em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases). Enquanto ainda não houver uma release publicada, use o artefato **Vortex-PT-BR** da última execução bem-sucedida em [Actions](https://github.com/Kyo-70/Vortex_PT-BR/actions).
 2. Extraia o conteúdo.
 3. Copie a pasta **pt-BR** para a pasta **resources/locales** da instalação do Vortex. O resultado deve ser **resources/locales/pt-BR/info.json**.
 4. Reinicie o Vortex.
