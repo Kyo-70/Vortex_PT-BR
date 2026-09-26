@@ -1,0 +1,798 @@
+[
+  {
+    "type": "wiki",
+    "title": "Sobre a ordem de carregamento",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/About_Load_Orders?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": [
+      "complemento",
+      "loot"
+    ]
+  },
+  {
+    "type": "wiki",
+    "title": "Adicionar um novo jogo ao Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Adding_a_new_game_to_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": [
+      "descubrir"
+    ]
+  },
+  {
+    "type": "wiki",
+    "title": "Gestão de categorias",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Category_Management?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Escolhendo o vórtice",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Choosing_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Configure seu antivírus para funcionar com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Configuring_your_anti-virus_to_work_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Controle de acesso às pastas",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Controlled_Folder_Access?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": [
+      "enoente",
+      "permisão",
+      "skyrim.ini",
+      "fallout4.ini"
+    ]
+  },
+  {
+    "type": "wiki",
+    "title": "Criando uma extensão de jogo para o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Creating_a_game_extension_for_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Criando temas para o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Creating_themes_for_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": [
+      "aparencia",
+      "fonte",
+      "estilo",
+      "tamanho da fonte"
+    ]
+  },
+  {
+    "type": "wiki",
+    "title": "Métodos de implantação",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Deployment_Methods?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Diferença entre grupos e categorias",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Difference_between_Groups_and_Categories?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Baixe Mods Nexus com Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Downloading_from_Nexus_Mods_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Mensagens de erro",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Error_Messages?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Mudanças externas",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/External_Changes?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Conflitos de arquivo: Nexus Mod Manager vs Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/File_Conflicts:_Nexus_Mod_Manager_vs_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Perguntas frequentes",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Como criar instaladores de mods",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/How_to_create_mod_installers?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Como solicitar suporte nos fóruns",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/How_to_request_Support_on_the_Forums?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Importando mods do NMM",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Importing_mods_from_NMM?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Instalando seu primeiro mod com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Installing_your_first_mod_with_vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Atalhos de teclado",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Keyboard_Shortcuts?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Entrar pelo do Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Logging_in_via_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Gerenciamento de conflitos de arquivos",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Managing_File_Conflicts?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Gerenciando Jogos Salvos",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Managing_Save_Games?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Gerenciando seu pedido de carga",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Managing_your_Load_Order?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Pasta de documentos mal configurada",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Misconfigured_Documents_Folder?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando 7 Days To Die com Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_7_Days_To_Die_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando A Hat In Time com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_A_Hat_In_Time_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Bannerlord com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Bannerlord_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Blade & Sorcery com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Blade_&_Sorcery_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Devil May Cry 5 com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Devil_May_Cry_5_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Halo: The Master Chief Collection com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Halo:_The_Master_Chief_Collection_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Kenshi com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Kenshi_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Monster Hunter: World com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Monster_Hunter:_World_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Sekiro com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Sekiro_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Skyrim Special Edition com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Skyrim_Special_Edition_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Stardew Valley com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Stardew_Valley_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Subnautica com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Subnautica_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando The Sims 4 com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_The_Sims_4_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando The Witcher 3 com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_The_Witcher_3_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando X4: Foundations com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_X4:_Foundations_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Movendo sua configuração do Vortex Mod para um novo computador",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Moving_your_Vortex_Mod_Setup_to_a_new_Computer?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Empacotando extensões para o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Packaging_extensions_for_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Removendo o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Removing_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Configurando perfis no Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Setting_up_profiles_in_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "A abordagem Vortex para classificar a ordem de carga",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/The_Vortex_approach_to_load_order_sorting?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: BodySlide e Outfit Studio",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_BodySlide_and_Outfit_Studio?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: ENB",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_ENB?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: FNIS",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_FNIS?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: Mesclar plug-ins",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_Merge_Plugins?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: Extensores de script",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_Script_Extenders?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: Witcher 3 Script Merger",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_Witcher_3_Script_Merger?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: xEdit",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_xEdit?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: zEdit",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_zEdit?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Traduzindo o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Translating_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Solução de problemas: Como enviar seu arquivo de log do Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Troubleshooting:_How_to_send_in_your_Vortex_log_file?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Interface Visão geral",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/User_Interface_Overview?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Interface: Icones",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/User_Interface:_Icons?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Usando Filtros",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Using_Filters?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Vortex vs. Nexus Mod Manager",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Vortex_vs._Nexus_Mod_Manager?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Adicionando um novo jogo no Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Adding_a_new_game_to_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": [
+      "descobrir"
+    ]
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramentas de criação de ativos",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Asset_Creation_Tools?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Gerenciamento de categoria",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Category_Management?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Escolhendo o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Choosing_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Criando um Mod",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Creating_a_mod?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Diferença entre grupos e categorias",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Difference_between_Groups_and_Categories?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Baixando do Nexus Mods com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Downloading_from_Nexus_Mods_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Conflitos de arquivo: Nexus Mod Manager vs Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/File_Conflicts:_Nexus_Mod_Manager_vs_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Perguntas Frequentes",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Importando mods do NMM",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Importing_mods_from_NMM?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Instalando Mods",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Installing_Mods?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "KCD Antes de você começar",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/KCD_Before_You_Start?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "KCD Contrato de licença de usuário final",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/KCD_End_User_License_Agreement?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Fazendo login pelo Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Logging_in_via_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando 7 Days To Die com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_7_Days_To_Die_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando A Hat In Time com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_A_Hat_In_Time_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Bannerlord com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Bannerlord_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Blade & Sorcery com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Blade_&_Sorcery_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Devil May Cry 5 com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Devil_May_Cry_5_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Halo: The Master Chief Collection com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Halo:_The_Master_Chief_Collection_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Kenshi com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Kenshi_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Monster Hunter: World com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Monster_Hunter:_World_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Sekiro com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Sekiro_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Skyrim Special Edition com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Skyrim_Special_Edition_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Stardew Valley com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Stardew_Valley_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Subnautica com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Subnautica_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando The Sims 4 com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_The_Sims_4_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando The Witcher 3 com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_The_Witcher_3_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando Tools Overview",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_Tools_Overview?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Modificando X4: Foundations com o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Modificando_X4:_Foundations_with_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Configurando o banco de dados",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Setting_up_Database?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Configurando perfis no Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Setting_up_profiles_in_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: BodySlide e Outfit Studio",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_BodySlide_and_Outfit_Studio?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: ENB",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_ENB?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: FNIS",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_FNIS?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: Merge Plugins",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_Merge_Plugins?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: Script Extenders",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_Script_Extenders?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: Witcher 3 Script Merger",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_Witcher_3_Script_Merger?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: xEdit",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_xEdit?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Ferramenta de Configuração: zEdit",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Tool_Setup:_zEdit?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Criando temas para o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Creating_themes_for_Vortex?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": [
+      "visual",
+      "fonte",
+      "estilo",
+      "legivel"
+    ]
+  },
+  {
+    "type": "wiki",
+    "title": "Atalhos do teclado",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Keyboard_Shortcuts?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Gerenciando jogos salvos",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Managing_Save_Games?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Visão geral da interface",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/User_Interface_Overview?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "wiki",
+    "title": "Interface: Icones",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/User_Interface:_Icons?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Por que não consigo alterar a ordem de carregamento do plugin diretamente (arrastar e soltar)?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Why_can_I_not_change_the_plugin_load_order_directly_(drag_&_drop)?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Por que você criou o Vortex em vez de continuar o Nexus Mod Manager (NMM)?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Why_did_you_create_Vortex_instead_of_continuing_Nexus_Mod_Manager_(NMM)?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Preciso de LOOT/Quero usar LOOT para classificação/Existe uma diferença entre a classificação de LOOT e a classificação de Vortex?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Do_I_need_LOOT/I_want_to_use_LOOT_for_sorting/Is_there_a_difference_between_LOOT_sorting_and_Vortex_sorting?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Como uso os vários Script Extenders - SKSE, SKSE64, F4SE - com o Vortex?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#How_do_I_use_the_various_Script_Extenders_-_SKSE,_SKSE64,_F4SE_-_with_Vortex?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Como adiciono uma ferramenta ao Vortex?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#How_do_I_add_a_tool_to_Vortex?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "I've set up a tool but it's not working. What can I do?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#I've_set_up_a_tool_but_it's_not_working._What_can_I_do?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "What can I do if Vortex fails to update/install?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#What_can_I_do_if_Vortex_fails_to_update/install?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Posso ter perfis de mod diferentes (por exemplo, personagens diferentes) no Vortex/Como configuro perfis no Vortex?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Can_I_have_different_mod_profiles_(for_e.g._different_characters)_in_Vortex/How_do_I_set_up_profiles_in_Vortex?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Estou recebendo um erro dizendo \"Plugins não classificados por causa de regras cíclicas\". O que isso significa?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#I_am_getting_an_error_saying_“Plugins_not_sorted_because_of_cyclic_rules”._What_does_that_mean?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "O que significa \"implantação\" (e \"limpar\")?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#What_does_\"deployment\"_(and_“purge”)_mean?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Instalei um mod mas o esm/esp correspondente não aparece. O que eu posso fazer?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#I_have_installed_a_mod_but_the_corresponding_esm/esp_doesn't_show_up._What_can_I_do?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "O Vortex não lista DLCs no arquivo plugins.txt. Isso é um inseto?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Vortex_does_not_list_DLCs_in_the_plugins.txt_file._Is_this_a_bug?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "(Como) posso ativar/desativar/remover vários mods/plugins/downloads de uma só vez?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#(How)_can_I_enable/disable/remove_multiple_mods/plugins/downloads_at_once?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Como posso impedir que o Vortex manipule links Nexus Mods?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#How_can_I_stop_Vortex_from_handling_Nexus_Mods_links?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Devo excluir arquivos/pastas \"x\" da minha instalação do Vortex?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Should_I_delete_\"x\"_files/folders_from_my_Vortex_installation?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Estou recebendo uma mensagem \"O estado do aplicativo é inválido\" após a atualização. Algo está errado?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#I_am_getting_a_\"Application_state_is_invalid\"_message_after_updating._Is_something_wrong?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Como a implantação do Vortex é diferente do VFS do Mod Organizer?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#How_is_Vortex_deployment_different_to_Mod_Organizer's_VFS?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Estou recebendo um erro sobre o espaço em disco (erro: ENOSPC: sem espaço no dispositivo). O que está errado?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#I_am_getting_an_error_about_disc_space_(error:_ENOSPC:_no_space_left_on_device)._What_is_wrong?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Vortex trava com uma tela branca. O que devo fazer?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Vortex_crashes_with_a_white_screen._What_should_I_do?",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "O Vortex trava ao tentar instalar certos mods (não todos) com um instalador com script c#",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Vortex_crashes_when_trying_to_install_certain_(not_all)_mods_with_a_c#_scripted_installer",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "O Vortex falha ao tentar abrir a página de configurações",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Vortex_crashes_when_trying_to_open_the_settings_page",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Vortex trava ao tentar instalar qualquer mod",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Vortex_crashes_trying_to_install_any_mod",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Vortex trava quando o jogo trava",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Vortex_crashes_when_the_game_crashes",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Meu jogo está travando após migrar para o Vortex",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#My_game_is_crashing_after_migrating_to_Vortex",
+    "keywords": []
+  },
+  {
+    "type": "Perguntas frequentes",
+    "title": "Por que o Vortex está embaçado?",
+    "url": "https://wiki-nexusmods-com.translate.goog/index.php/Frequently_Asked_Questions?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc#Why_is_Vortex_blurry?",
+    "keywords": []
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "dialog": {
+    "title": "Criar pacote de suporte",
+    "intro": "O Vortex está reunindo os arquivos de log, o estado atual do aplicativo e eventuais relatórios de falha recentes em um único arquivo compactado. Nenhum dado de login será incluído.",
+    "sendTo": "Envie o arquivo para a equipe do Vortex, junto com uma breve descrição do problema, nos fóruns do Vortex ou no Discord:",
+    "links": {
+      "forums": "Fórum de suporte do Vortex",
+      "discord": "Discord do Nexus Mods"
+    },
+    "building": "Criando pacote de suporte...",
+    "archiveReady": "Seu pacote de suporte está pronto.",
+    "failed": "O Vortex não conseguiu criar o pacote de suporte.",
+    "buttons": {
+      "open": "Mostrar na pasta",
+      "cancel": "Cancelar",
+      "close": "Fechar",
+      "tryAgain": "Tentar novamente"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+﻿{
+  "Savegame folder monitoring": "Monitoramento da pasta savegame",
+  "Monitor Savegame directory for changes": "Monitore o diretório Savegame para alterações",
+  "If your games take very long to save when Vortex is running, try disabling this.": "Se seus jogos demorarem muito para serem salvos quando o Vortex estiver em execução, tente desativá-lo.",
+  "Select directories to scan": "Selecione as pastas para escanear",
+  "Cancel": "Cancelar",
+  "Scan": "Escanear"
+}

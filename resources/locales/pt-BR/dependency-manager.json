@@ -1,0 +1,3 @@
+{
+  "{{ count }} conflicting file": "{{ count }} arquivo(s) em conflito"
+}

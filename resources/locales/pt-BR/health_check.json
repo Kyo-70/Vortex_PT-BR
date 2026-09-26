@@ -1,0 +1,146 @@
+{
+  "actions": {
+    "install_all": "Instalar tudo com 1 clique ({{count}})"
+  },
+  "divider": {
+    "and": "E",
+    "or": "Ou"
+  },
+  "shared": {
+    "requires_files": "É necessário instalar mais {{ count }} arquivo de mod para funcionar corretamente:",
+    "requires_files_plural": "É necessário instalar mais {{ count }} arquivos de mod para funcionar corretamente:",
+    "requires_pick": "É necessário selecionar mais {{ count }} arquivo de mod para funcionar corretamente:",
+    "requires_pick_plural": "É necessário selecionar mais {{ count }} arquivos de mod para funcionar corretamente:",
+    "wrong_version_installed": "É necessário instalar uma versão diferente deste arquivo de mod já existente para funcionar corretamente:",
+    "wrong_version_installed_plural": "É necessário instalar versões diferentes de {{ count }} arquivos de mod existentes para funcionarem corretamente:",
+    "wrong_version_enabled": "É necessário ativar uma versão diferente deste arquivo de mod instalado para funcionar corretamente:",
+    "wrong_version_enabled_plural": "É necessário ativar versões diferentes de {{ count }} arquivos de mod instalados para funcionarem corretamente:",
+    "correct_version_uninstalled": "É necessário instalar este arquivo de mod baixado anteriormente para funcionar corretamente:",
+    "correct_version_uninstalled_plural": "É necessário instalar {{ count }} arquivos de mod baixados anteriormente para funcionarem corretamente:"
+  },
+  "listing": {
+    "title": "Verificação de integridade",
+    "subtitle": "Revise sua lista de mods para encontrar problemas e saiba como resolvê-los, se necessário.",
+    "last_updated": "Última atualização: {{time}}",
+    "item": {
+      "title": "Talvez seja necessário um arquivo de mod adicional para: {{modName}}",
+      "description": "Mod ausente: {{dependencyModName}}",
+      "more_count": "+{{ count }} mais",
+      "missing_for": "Mod obrigatório ausente para: {{modName}}",
+      "missing_for_plural": "Mods obrigatórios ausentes para: {{modName}}",
+      "or_join": "ou"
+    },
+    "no_results_active": {
+      "title": "Verificação aprovada",
+      "message": "Pronto para jogar"
+    },
+    "no_results_hidden": {
+      "title": "Nenhum item oculto"
+    },
+    "no_results_logged_out": {
+      "title": "Verificações adicionais disponíveis",
+      "message": "A Verificação de integridade não encontrou problemas nas verificações que pôde executar. Entre na sua conta para verificar também requisitos ausentes do Nexus Mods.",
+      "action": "Entre para concluir a Verificação de integridade"
+    },
+    "external_mod_install": "Instalação de mod externo",
+    "install_one_click": "Instalar com 1 clique ({{count}})",
+    "install_uninstalled": "Instalar (já baixado)",
+    "pick_mod_install": "Escolher instalação do mod",
+    "premium_banner": {
+      "description": "Baixe os requisitos com 1 clique. Sem visitar páginas ou esperar. <premiumLink>Assine o Premium</premiumLink>"
+    }
+  },
+  "detail": {
+    "title": {
+      "suggestion": "Sugestão",
+      "warning": "Aviso",
+      "error": "Erro"
+    },
+    "subtitle": {
+      "suggestion": "Alterações que podem melhorar sua lista de mods.",
+      "warning": "Problemas que podem impedir o funcionamento de partes da sua lista de mods.",
+      "error": "Os problemas impedirão o jogo de funcionar. Corrija-os antes de jogar."
+    },
+    "was_this_helpful": {
+      "suggestion": "Esta sugestão foi útil?",
+      "warning": "Este aviso foi útil?",
+      "error": "Este erro foi útil?"
+    },
+    "item": {
+      "title": "Possível mod obrigatório ausente para: {{modName}}",
+      "may_require_file": "Talvez seja necessário instalar este arquivo de mod adicional para funcionar corretamente:",
+      "author_note": "Observação do autor: {{note}}",
+      "mod_page_source_note": "Este requisito foi identificado na página do mod, e não no sistema de requisitos por arquivo; portanto, pode não ser necessário para sua configuração específica. <modLink>Acesse a página do mod para ver todos os detalhes</modLink>.",
+      "open_external_mod_page": "Abrir página externa do mod",
+      "external_hosted_note": "Este mod está hospedado fora do Nexus Mods. Confira a descrição antes de instalá-lo.",
+      "after_installing": "Após instalar, clique em Confirmar instalação. Não é possível detectar automaticamente instalações de mods externos.",
+      "confirm_install": "Confirmar instalação",
+      "missing_for": "Mod obrigatório ausente para: <modLink>{{modName}}</modLink>",
+      "missing_for_plural": "Mods obrigatórios ausentes para: <modLink>{{modName}}</modLink>",
+      "install_via_mod_page": "Instalar pela página do mod",
+      "view_mod_page": "Ver página do mod",
+      "install_one_click": "Instalar com 1 clique",
+      "downloading": "Baixando...",
+      "installing": "Instalando...",
+      "pick_one": "Escolha um destes",
+      "install_required": "Instalar versão necessária",
+      "different_version_required": "É necessário instalar uma versão diferente",
+      "current_version": "Versão atual",
+      "required_version": "Versão necessária:",
+      "enable_required": "Ativar versão necessária",
+      "view_in_mods": "Ver em Mods",
+      "enable_this_version": "Ativar esta versão",
+      "install_uninstalled": "Instalar (já baixado)",
+      "adult": "Adulto",
+      "installed": "Instalado",
+      "enabled": "Ativado",
+      "disabled": "Desativado"
+    },
+    "feedback_modal": {
+      "title": "Agradecemos por nos avisar",
+      "description": "Ajude-nos a melhorar esta mensagem contando o que deu errado.",
+      "options": {
+        "incorrect_requirement": "Requisito incorreto",
+        "requirement_already_installed": "Requisito já instalado",
+        "explanation_was_unclear": "A explicação não ficou clara",
+        "other": "Outro"
+      },
+      "buttons": {
+        "cancel": "Ignorar",
+        "confirm": "Enviar comentário"
+      }
+    }
+  },
+  "settings": {
+    "title": "Verificação de integridade (Beta)",
+    "description": "Detecte problemas na sua lista de mods e veja sugestões para corrigi-los. Mais verificações serão adicionadas em breve.",
+    "mod_requirements": "Sugestões de requisitos de mods ausentes",
+    "file_requirements": "Avisos de requisitos de arquivos ausentes"
+  },
+  "premium": {
+    "modal": {
+      "title": {
+        "single": "Pule o site e instale imediatamente.",
+        "all": "Pule o site e instale todos os requisitos imediatamente."
+      },
+      "description": {
+        "single": "A instalação de mods com 1 clique pelo aplicativo é um recurso Premium.\n\nUsuários gratuitos fazem o download pelas páginas dos mods no site, onde os anúncios ajudam a manter a plataforma funcionando.",
+        "all": "A instalação de mods com 1 clique pelo aplicativo é um recurso Premium.\n\nUsuários gratuitos fazem o download pelas páginas dos mods no site, onde os anúncios ajudam a manter a plataforma funcionando."
+      },
+      "benefits_title": "Com o Premium, você recebe:",
+      "benefits": {
+        "downloads": "Downloads com 1 clique no aplicativo e atualizações de mods",
+        "collections": "Instalação de coleções com 1 clique",
+        "speed": "Velocidade de download sem limites",
+        "ad_free": "Sem anúncios para sempre, mesmo se cancelar depois"
+      },
+      "buttons": {
+        "primary": "Liberar instalações com 1 clique",
+        "secondary": {
+          "single": "Instalar pela página do mod (grátis)",
+          "all": "Voltar e abrir as páginas dos mods"
+        }
+      }
+    }
+  }
+}

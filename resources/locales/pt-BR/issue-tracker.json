@@ -1,0 +1,18 @@
+﻿{
+  "Your issues": "Seus problemas",
+  "Refresh Issues": "Atualizar problemas",
+  "No reported issues": "Nenhum problema relatado",
+  "Lucky you...": "Sorte sua...",
+  "Bug": "Bug",
+  "Feedback required": "Feedback necessário",
+  "Closed": "Fechado",
+  "{{completion}}%{{planned}}": "{{completion}}%{{planned}}",
+  ", planned for {{date}}": ", planejado para {{date}}",
+  "Milestone: {{title}} ({{state}})": "Marco: {{title}} ({{state}})",
+  "Open": "Abrir",
+  "{{ count }} comments": "{{ count }} comentários",
+  "You've received feedback response": "Você recebeu uma resposta de feedback",
+  "The Vortex developers require your assistance with a bug/suggestion which you have submitted. To view our response please click on any of the below links: <br /><br />{{ urlString }}": "Os desenvolvedores do Vortex precisam de sua ajuda com um bug/sugestão que você enviou. Para ver nossa resposta, clique em qualquer um dos links abaixo: <br /><br />}",
+  "More": "Mais",
+  "Close": "Fechar"
+}

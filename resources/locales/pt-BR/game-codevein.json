@@ -1,0 +1,5 @@
+{
+  "Changing your load order": "Alterando sua ordem de carregamento",
+  "Drag and drop the mods on the left to reorder them. Code Vein loads mods in alphabetic order so Vortex prefixes the directory names with \"AAA, AAB, AAC, ...\" to ensure they load in the order you set here. ": "Arraste e solte os mods à esquerda para reordená-los. O Code Vein carrega os mods em ordem alfabética, então o Vortex prefixa os nomes dos diretórios com \"AAA, AAB, AAC, ...\" para garantir que eles sejam carregados na ordem definida aqui.",
+  "Note: You can only manage mods installed with Vortex. Installing other mods manually may cause unexpected errors.": "Nota: Você só pode gerenciar mods instalados com o Vortex. Instalar outros mods manualmente pode causar erros inesperados."
+}
