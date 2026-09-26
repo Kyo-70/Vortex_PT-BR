@@ -2,7 +2,7 @@
   "name": "Tradução Português do Brasil p/ Vortex by Rikintosh",
   "author": "Rikintosh",
   "version": "1.6.14",
-  "description": "Tradução PT-BR do Vortex. Inclui atualizações da interface principal; o suporte experimental à extensão Modlist Backup fica separado.",
+  "description": "Tradução PT-BR da interface do Vortex.",
   "type": "translation",
   "modId": 424
 }

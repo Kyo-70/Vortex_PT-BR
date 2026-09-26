@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Vortex translation ZIP, including the optional extension patch."""
+"""Build the Vortex translation ZIP."""
 
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -11,7 +11,6 @@ ROOT = Path(__file__).resolve().parents[1]
 LOCALE = ROOT / "resources" / "locales" / "pt-BR"
 DIST = ROOT / "dist"
 PACKAGE = DIST / "package"
-PATCH = ROOT / "patches" / "modlist-backup" / "index.js"
 README = ROOT / "resources" / "read-me.txt"
 
 
@@ -21,8 +20,6 @@ def main() -> None:
     version = str(info["version"])
     if not version or any(char in version for char in "/\\"):
         raise SystemExit("Invalid version in resources/locales/pt-BR/info.json")
-    if not PATCH.is_file():
-        raise SystemExit(f"Missing extension patch: {PATCH}")
     if not README.is_file():
         raise SystemExit(f"Missing package readme: {README}")
 
@@ -32,10 +29,6 @@ def main() -> None:
     package_locale.mkdir(parents=True)
     shutil.copytree(LOCALE, package_locale, dirs_exist_ok=True)
     shutil.copy2(README, PACKAGE / "read-me.txt")
-    package_patch = PACKAGE / "patches" / "modlist-backup" / "index.js"
-    package_patch.parent.mkdir(parents=True)
-    shutil.copy2(PATCH, package_patch)
-
     archive = DIST / f"Vortex_PT-BR_{version}.zip"
     with ZipFile(archive, "w", ZIP_DEFLATED) as zip_file:
         for path in sorted(PACKAGE.rglob("*")):

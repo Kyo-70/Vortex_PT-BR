@@ -1,93 +1,63 @@
 # Vortex em Português do Brasil
 
-Projeto comunitário para manter a tradução PT-BR do Vortex organizada, fácil de instalar e atualizada junto com as mudanças da interface.
+Projeto comunitário para manter a tradução PT-BR do Vortex organizada, simples de instalar e atualizada com as mudanças da interface.
 
 ## O que está incluído
 
-- Arquivos de idioma do Vortex em **resources/locales/pt-BR**.
-- Arquivo **common.json** reservado às strings do Vortex.
-- Tradução experimental da extensão **Modlist Backup** em **modlist-backup.json**, separada do idioma principal.
-- Patch opcional para a extensão Modlist Backup, incluído dentro do ZIP.
-- Launcher gráfico para verificar atualizações e instalar a tradução no Windows.
+- Arquivos de idioma do Vortex em `resources/locales/pt-BR`.
+- Traduções mantidas nos arquivos JSON e namespaces correspondentes do Vortex; `common.json` contém as strings principais.
+- Launcher gráfico para localizar o Vortex, verificar atualizações e instalar a tradução no Windows.
 - Scripts para validar os JSONs, gerar o pacote e instalar os arquivos localmente.
 
-Créditos da tradução base: Rikintosh e PabloFub. Manutenção e organização deste repositório: Kyo-70.
+Créditos da tradução base: Rikintosh e PabloFub. Manutenção deste repositório: Kyo-70.
 
-## Instalação da tradução do Vortex
+## Instalar pelo launcher
 
-### Pelo launcher (recomendado)
-
-1. Baixe **Vortex_PT-BR_Launcher.exe** em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases).
-2. Abra o launcher. Ele consulta a última versão, mostra a versão instalada e tenta localizar automaticamente o Vortex.
-3. Se a pasta não for localizada, clique em **Localizar...** e selecione a pasta do Vortex ou **resources/locales**.
-4. Clique em **Instalar / Atualizar**. Se já existir uma pasta **pt-BR**, ela será preservada em uma cópia de segurança.
+1. Baixe `Vortex_PT-BR_Launcher.exe` em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases).
+2. Abra o launcher. Ele verifica a versão disponível e tenta localizar automaticamente a instalação do Vortex.
+3. Se necessário, clique em **Localizar...** e selecione a pasta do Vortex ou `resources/locales`.
+4. Clique em **Instalar / Atualizar**. Se já existir uma pasta `pt-BR`, o launcher guarda uma cópia antes de substituí-la.
 5. Reinicie o Vortex e selecione **Português (Brasil)** nas configurações de idioma.
 
-O launcher é uma janela gráfica, sem terminal. Ele precisa de conexão com a internet para consultar e baixar a versão mais recente. Se o Vortex estiver em uma pasta protegida do Windows, ele oferece a opção de reiniciar como administrador.
+O launcher é uma janela gráfica, sem terminal. Ele precisa de internet para consultar a release e baixar o pacote. Se o Vortex estiver em uma pasta protegida do Windows, o launcher pode solicitar permissão de administrador.
 
-O patch experimental do **Modlist Backup** é opcional. Marque essa opção no launcher e selecione o **index.js** da extensão. O patch vem dentro do mesmo ZIP da tradução, e o arquivo original será preservado em backup.
+## Instalar pelo ZIP
 
-### Pelo ZIP (instalação manual)
+Baixe `Vortex_PT-BR_*.zip` em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases), extraia o conteúdo e copie a pasta `pt-BR` para `resources/locales` da instalação do Vortex. O arquivo `info.json` deve ficar em `resources/locales/pt-BR/info.json`, ao lado da pasta `en`.
 
-Baixe **Vortex_PT-BR_*.zip** em [Releases](https://github.com/Kyo-70/Vortex_PT-BR/releases) e extraia o conteúdo. Copie a pasta **pt-BR** para **resources/locales** da instalação do Vortex. O ZIP também contém o patch em **patches/modlist-backup/index.js** e o arquivo de instruções.
+O script `scripts/install-local.bat` também copia os arquivos e cria cópias de segurança dos JSONs que já existirem.
 
-Se estiver trabalhando a partir do código-fonte deste repositório, copie **resources/locales/pt-BR** para dentro de **Vortex/resources/locales**. A pasta **pt-BR** precisa ficar ao lado da pasta **en**.
+## Estrutura
 
-O script **scripts/install-local.bat** também copia os arquivos e cria cópias de segurança dos JSONs que já existirem. Ele solicita a pasta **resources/locales** da instalação do Vortex.
+```text
+resources/
+  read-me.txt
+  locales/
+    pt-BR/
+      common.json
+      info.json
+      ...
+scripts/
+  build-package.bat
+  build_package.py
+  install-local.bat
+  validate-locales.py
+installer/
+  Program.cs
+  VortexPtBrLauncher.csproj
+  app.manifest
+  vortex-ptbr.ico
+```
 
-## Tradução da extensão Modlist Backup
+## Manutenção e releases
 
-A extensão tem um namespace separado para que suas strings não sejam misturadas com as do Vortex:
+Consulte `CONTRIBUTING.md` para adicionar traduções, preservar variáveis e validar as alterações.
 
-- **resources/locales/pt-BR/modlist-backup.json**
-- **patches/modlist-backup/index.js**
+O pacote ZIP é criado por `scripts/build-package.bat` ou `python scripts/build_package.py`. Cada release contém dois anexos: o ZIP da tradução e `Vortex_PT-BR_Launcher.exe`. O GitHub também exibe automaticamente links separados para baixar o código-fonte.
 
-O patch altera o arquivo **index.js** da extensão para carregar esse namespace. Como o patch depende da estrutura e da versão da extensão, faça uma cópia de segurança do arquivo original antes de aplicá-lo. O instalador local oferece essa opção e guarda o original como **index.js.ptbr.bak**.
-
-Para aplicar manualmente:
-
-1. Copie **modlist-backup.json** para a pasta **pt-BR** dentro de **resources/locales** do Vortex.
-2. Faça uma cópia do **index.js** original da extensão.
-3. Substitua o **index.js** da extensão pelo arquivo **patches/modlist-backup/index.js** extraído do ZIP.
-4. Reinicie o Vortex.
-
-O suporte à extensão é experimental. Se uma atualização da extensão mudar seu código, reaplique o patch apenas depois de conferir as alterações com a nova versão.
-
-## Estrutura do repositório
-
-    resources/
-      read-me.txt
-      locales/
-        pt-BR/
-          common.json
-          info.json
-          modlist-backup.json
-          ...
-    patches/
-      modlist-backup/
-        index.js
-    scripts/
-      build-package.bat
-      build_package.py
-      install-local.bat
-      validate-locales.py
-    installer/
-      Program.cs
-      VortexPtBrLauncher.csproj
-      app.manifest
-
-## Manutenção
-
-Consulte **CONTRIBUTING.md** para adicionar strings, preservar variáveis de substituição e validar alterações.
-
-O pacote ZIP com a tradução e o patch opcional é criado em **dist** por **scripts/build-package.bat**. Cada release contém somente **Vortex_PT-BR_*.zip** e **Vortex_PT-BR_Launcher.exe**. O launcher também recebe um ícone próprio no build para Windows x64.
-
-Ao publicar uma versão, atualize o campo **version** de **resources/locales/pt-BR/info.json** e envie uma tag no formato **v1.6.15**. O GitHub Actions valida os arquivos, cria os pacotes, publica a release e compila o launcher.
-
-Para publicar o launcher numa tag já criada, envie as alterações para **main** e execute **Actions > Validate and build translation > Run workflow**. Informe a tag no campo **release_tag** (por exemplo, **v1.6.14**). O workflow cria ou atualiza a release com o ZIP e o executável; o patch do Modlist fica dentro do ZIP.
+Para publicar uma nova versão, atualize `version` em `resources/locales/pt-BR/info.json`, envie as alterações e crie uma tag como `v1.6.15`. Para atualizar uma tag existente, execute **Actions > Validate and build translation > Run workflow** e informe a tag em `release_tag`.
 
 ## Origem
 
 - [Repositório oficial do Vortex](https://github.com/Nexus-Mods/Vortex)
-- [Pasta de idiomas em inglês do Vortex](https://github.com/Nexus-Mods/Vortex/tree/master/locales/en)
-- [Repositório da extensão Vortex Games](https://github.com/ChemGuy1611/ChemBoy1-Vortex-Games)
+- [Arquivos de idioma em inglês do Vortex](https://github.com/Nexus-Mods/Vortex/tree/master/locales/en)

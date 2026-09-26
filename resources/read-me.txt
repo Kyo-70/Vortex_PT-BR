@@ -1,8 +1,6 @@
-Tradução PT-BR para o Vortex
+Tradução PT-BR do Vortex
 
 Créditos da tradução base: Rikintosh e PabloFub.
 Manutenção deste repositório: Kyo-70.
 
-Para instalar manualmente, copie a pasta pt-BR para a pasta resources/locales da instalação do Vortex. Reinicie o programa e escolha Português (Brasil) nas configurações de idioma.
-
-O ZIP também contém patches/modlist-backup/index.js, o patch opcional da extensão Modlist Backup. Para aplicá-lo manualmente, faça uma cópia do index.js original da extensão e substitua-o por esse arquivo. O launcher pode aplicar o patch e criar a cópia de segurança automaticamente.
+Para instalar manualmente, copie a pasta pt-BR para a pasta resources/locales da instalação do Vortex. Reinicie o programa e escolha Português (Brasil) nas configurações de idioma. As traduções do Vortex ficam nos arquivos JSON correspondentes, com as strings principais em common.json.

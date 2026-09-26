@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-"""Validate locale JSON syntax, duplicate keys, and extension separation."""
+"""Validate locale JSON syntax, duplicate keys, and Vortex metadata."""
 
 from pathlib import Path
 import json
-import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCALE = ROOT / "resources" / "locales" / "pt-BR"
-PATCH = ROOT / "patches" / "modlist-backup" / "index.js"
 
 
 class DuplicateKeyError(ValueError):
@@ -31,10 +29,6 @@ def read_json(path: Path):
     )
 
 
-def placeholders(value: str) -> list[str]:
-    return sorted(re.findall(r"\{\{\s*[^{}]+\s*\}\}", value))
-
-
 def main() -> None:
     locale_files = sorted(LOCALE.glob("*.json"))
     if not locale_files:
@@ -53,24 +47,8 @@ def main() -> None:
     if info.get("name") != "Tradução Português do Brasil p/ Vortex by Rikintosh":
         raise SystemExit("Unexpected translation display name in info.json")
 
-    common = parsed.get("common.json", {})
-    extension = parsed.get("modlist-backup.json", {})
-    overlap = sorted(set(common) & set(extension))
-    if overlap:
-        raise SystemExit("Modlist Backup keys must stay out of common.json: " + ", ".join(overlap))
-    for key, translation in extension.items():
-        if placeholders(key) != placeholders(translation):
-            raise SystemExit(f"Placeholder mismatch in modlist-backup.json: {key}")
-
-    if not PATCH.is_file():
-        raise SystemExit(f"Missing extension patch: {PATCH}")
-    patch_text = PATCH.read_text(encoding="utf-8")
-    if "loadNamespaces" not in patch_text or "modlist-backup" not in patch_text:
-        raise SystemExit("Modlist Backup patch does not load its separate namespace")
-
     print(f"Validated {len(locale_files)} locale JSON files.")
-    print(f"Vortex core strings: {len(common)}")
-    print(f"Modlist Backup strings: {len(extension)}")
+    print(f"Vortex common.json strings: {len(parsed.get('common.json', {}))}")
 
 
 if __name__ == "__main__":

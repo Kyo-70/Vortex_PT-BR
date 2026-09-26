@@ -30,11 +30,8 @@ internal sealed class LauncherForm : Form
     private readonly Label _latestVersion = new();
     private readonly Label _status = new();
     private readonly ProgressBar _progress = new();
-    private readonly CheckBox _installModlistPatch = new();
-    private readonly TextBox _modlistIndexPath = new();
     private readonly Button _checkButton = new();
     private readonly Button _installButton = new();
-    private readonly Button _browseModlistButton = new();
 
     private ReleaseInfo? _release;
     private bool _busy;
@@ -46,7 +43,7 @@ internal sealed class LauncherForm : Form
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
         MinimizeBox = true;
-        ClientSize = new Size(690, 465);
+        ClientSize = new Size(690, 386);
         Font = new Font("Segoe UI", 9F);
 
         var heading = new Label
@@ -109,47 +106,25 @@ internal sealed class LauncherForm : Form
         destinationGroup.Controls.Add(browseVortexButton);
         Controls.Add(destinationGroup);
 
-        var extensionGroup = new GroupBox
-        {
-            Text = "Extensão Modlist Backup (opcional e experimental)",
-            Location = new Point(22, 287),
-            Size = new Size(646, 88)
-        };
-        _installModlistPatch.Text = "Instalar também o patch PT-BR da extensão";
-        _installModlistPatch.AutoSize = true;
-        _installModlistPatch.Location = new Point(15, 22);
-        _installModlistPatch.CheckedChanged += (_, _) => UpdateModlistControls();
-        _modlistIndexPath.Location = new Point(17, 51);
-        _modlistIndexPath.Size = new Size(497, 25);
-        _modlistIndexPath.ReadOnly = true;
-        _browseModlistButton.Text = "Localizar index.js...";
-        _browseModlistButton.Location = new Point(523, 49);
-        _browseModlistButton.Size = new Size(104, 29);
-        _browseModlistButton.Click += (_, _) => BrowseModlistIndex();
-        extensionGroup.Controls.Add(_installModlistPatch);
-        extensionGroup.Controls.Add(_modlistIndexPath);
-        extensionGroup.Controls.Add(_browseModlistButton);
-        Controls.Add(extensionGroup);
-
-        _status.Location = new Point(24, 384);
+        _status.Location = new Point(24, 294);
         _status.Size = new Size(642, 20);
         _status.AutoEllipsis = true;
         _status.Text = "Pronto para verificar atualizações.";
         Controls.Add(_status);
 
-        _progress.Location = new Point(22, 410);
+        _progress.Location = new Point(22, 320);
         _progress.Size = new Size(646, 15);
         _progress.Style = ProgressBarStyle.Continuous;
         Controls.Add(_progress);
 
         _checkButton.Text = "Verificar atualizações";
-        _checkButton.Location = new Point(22, 435);
+        _checkButton.Location = new Point(22, 346);
         _checkButton.Size = new Size(180, 30);
         _checkButton.Click += async (_, _) => await CheckForUpdatesAsync();
         Controls.Add(_checkButton);
 
         _installButton.Text = "Instalar / Atualizar";
-        _installButton.Location = new Point(488, 435);
+        _installButton.Location = new Point(488, 346);
         _installButton.Size = new Size(180, 30);
         _installButton.Enabled = false;
         _installButton.Click += async (_, _) => await InstallLatestAsync();
@@ -159,7 +134,7 @@ internal sealed class LauncherForm : Form
         {
             Text = "Abrir página de releases",
             AutoSize = true,
-            Location = new Point(258, 443)
+            Location = new Point(258, 354)
         };
         releaseLink.LinkClicked += (_, _) => OpenReleasePage();
         Controls.Add(releaseLink);
@@ -170,7 +145,6 @@ internal sealed class LauncherForm : Form
             RefreshInstalledVersion();
             await CheckForUpdatesAsync();
         };
-        UpdateModlistControls();
     }
 
     private static HttpClient CreateHttpClient()
@@ -262,15 +236,6 @@ internal sealed class LauncherForm : Form
             if (close != DialogResult.Yes || IsVortexRunning()) return;
         }
 
-        if (_installModlistPatch.Checked)
-        {
-            if (!File.Exists(_modlistIndexPath.Text))
-            {
-                BrowseModlistIndex();
-                if (!File.Exists(_modlistIndexPath.Text)) return;
-            }
-        }
-
         var confirm = MessageBox.Show(this,
             $"Instalar a tradução PT-BR {_release.Version} em:\r\n{localePath}\r\n\r\n" +
             "A pasta pt-BR atual será preservada em uma cópia de segurança.\r\n\r\nContinuar?",
@@ -283,25 +248,12 @@ internal sealed class LauncherForm : Form
         {
             SetStatus("Baixando os arquivos da tradução...");
             var archiveBytes = await DownloadAsync(_release.LocaleZipUrl);
-            var patchBytes = _installModlistPatch.Checked
-                ? ReadModlistPatchFromArchive(archiveBytes)
-                : null;
-            if (_installModlistPatch.Checked && patchBytes is null)
-                throw new InvalidDataException("O ZIP baixado não contém o patch do Modlist Backup.");
-
             SetStatus("Instalando os arquivos do Vortex...");
             var installedVersion = await Task.Run(() => InstallLocaleArchive(archiveBytes, localePath));
 
-            var patchMessage = "";
-            if (patchBytes is not null)
-            {
-                InstallModlistPatch(patchBytes, _modlistIndexPath.Text);
-                patchMessage = " O patch do Modlist Backup também foi aplicado.";
-            }
-
             RefreshInstalledVersion();
             _latestVersion.Text = $"Disponível: {_release.Version}";
-            SetStatus($"Instalação da versão {installedVersion} concluída.{patchMessage} Reinicie o Vortex.");
+            SetStatus($"Instalação da versão {installedVersion} concluída. Reinicie o Vortex.");
             MessageBox.Show(this, $"Tradução PT-BR {installedVersion} instalada.\r\n\r\nReinicie o Vortex para carregar o idioma.",
                 "Instalação concluída", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -400,28 +352,6 @@ internal sealed class LauncherForm : Form
         }
     }
 
-    private static byte[]? ReadModlistPatchFromArchive(byte[] bytes)
-    {
-        using var input = new MemoryStream(bytes);
-        using var archive = new ZipArchive(input, ZipArchiveMode.Read);
-        var patchEntry = archive.Entries.FirstOrDefault(entry =>
-            string.Equals(entry.FullName, "patches/modlist-backup/index.js", StringComparison.OrdinalIgnoreCase));
-        if (patchEntry is null) return null;
-
-        using var patchStream = patchEntry.Open();
-        using var output = new MemoryStream();
-        patchStream.CopyTo(output);
-        return output.Length == 0 ? null : output.ToArray();
-    }
-
-    private static void InstallModlistPatch(byte[] bytes, string indexPath)
-    {
-        if (!File.Exists(indexPath)) throw new FileNotFoundException("O index.js da extensão não foi encontrado.", indexPath);
-        var backup = GetBackupPath(indexPath, "index.js.ptbr-");
-        File.Copy(indexPath, backup, overwrite: false);
-        File.WriteAllBytes(indexPath, bytes);
-    }
-
     private void DetectVortexInstallation()
     {
         var found = VortexLocator.FindLocalesPath();
@@ -454,33 +384,6 @@ internal sealed class LauncherForm : Form
         RefreshInstalledVersion();
         _installButton.Enabled = _release is not null;
         SetStatus($"Pasta do Vortex selecionada: {resolved}");
-    }
-
-    private void BrowseModlistIndex()
-    {
-        var detected = VortexLocator.FindModlistIndexPath();
-        using var dialog = new OpenFileDialog
-        {
-            Title = "Selecione o index.js da extensão Modlist Backup",
-            Filter = "Arquivo JavaScript (index.js)|index.js|Todos os arquivos (*.*)|*.*",
-            CheckFileExists = true,
-            FileName = detected is not null && File.Exists(detected) ? detected : "index.js"
-        };
-        if (dialog.ShowDialog(this) == DialogResult.OK)
-            _modlistIndexPath.Text = dialog.FileName;
-        else if (detected is not null && File.Exists(detected))
-            _modlistIndexPath.Text = detected;
-    }
-
-    private void UpdateModlistControls()
-    {
-        _modlistIndexPath.Enabled = _installModlistPatch.Checked;
-        _browseModlistButton.Enabled = _installModlistPatch.Checked;
-        if (_installModlistPatch.Checked && string.IsNullOrWhiteSpace(_modlistIndexPath.Text))
-        {
-            var found = VortexLocator.FindModlistIndexPath();
-            if (found is not null) _modlistIndexPath.Text = found;
-        }
     }
 
     private void RefreshInstalledVersion()
@@ -592,32 +495,6 @@ internal static class VortexLocator
         };
         foreach (var possibility in possibilities)
             if (Directory.Exists(Path.Combine(possibility, "en"))) return Path.GetFullPath(possibility);
-        return null;
-    }
-
-    public static string? FindModlistIndexPath()
-    {
-        var roots = new[]
-        {
-            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Vortex", "plugins"),
-            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "Vortex", "plugins")
-        };
-        foreach (var root in roots)
-        {
-            if (!Directory.Exists(root)) continue;
-            try
-            {
-                foreach (var file in Directory.EnumerateFiles(root, "index.js", SearchOption.AllDirectories))
-                {
-                    if (file.Contains("modlist", StringComparison.OrdinalIgnoreCase)) return file;
-                    var content = File.ReadAllText(file);
-                    if (content.Contains("Modlist Backup", StringComparison.OrdinalIgnoreCase)
-                        || content.Contains("modlist-backup", StringComparison.OrdinalIgnoreCase)) return file;
-                }
-            }
-            catch (UnauthorizedAccessException) { }
-            catch (IOException) { }
-        }
         return null;
     }
 
