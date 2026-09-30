@@ -12,7 +12,7 @@
   "Open": "Abrir",
   "{{ count }} comments": "{{ count }} comentários",
   "You've received feedback response": "Você recebeu uma resposta de feedback",
-  "The Vortex developers require your assistance with a bug/suggestion which you have submitted. To view our response please click on any of the below links: <br /><br />{{ urlString }}": "Os desenvolvedores do Vortex precisam de sua ajuda com um bug/sugestão que você enviou. Para ver nossa resposta, clique em qualquer um dos links abaixo: <br /><br />}",
+  "The Vortex developers require your assistance with a bug/suggestion which you have submitted. To view our response please click on any of the below links: <br /><br />{{ urlString }}": "Os desenvolvedores do Vortex precisam da sua ajuda com um problema ou sugestão que você enviou. Para ver a resposta, clique em um dos links abaixo: <br /><br />{{ urlString }}",
   "More": "Mais",
   "Close": "Fechar"
 }
