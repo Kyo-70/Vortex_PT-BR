@@ -48,6 +48,18 @@
     "pick_mod_install": "Escolher instalação do mod",
     "premium_banner": {
       "description": "Baixe os requisitos com 1 clique. Sem visitar páginas ou esperar. <premiumLink>Assine o Premium</premiumLink>"
+    },
+    "section": {
+      "warning": {
+        "title": "Avisos",
+        "description": "Problemas que podem impedir o funcionamento de partes da sua lista de mods."
+      },
+      "suggestion": {
+        "title": "Sugestões",
+        "description": "Alterações que podem melhorar sua lista de mods ou adicionar extras opcionais."
+      },
+      "collapse": "Recolher seção",
+      "expand": "Expandir seção"
     }
   },
   "detail": {
@@ -141,6 +153,16 @@
           "all": "Voltar e abrir as páginas dos mods"
         }
       }
+    }
+  },
+  "author_notes_modal": {
+    "title": "Revisar as notas dos autores dos mods",
+    "description": "Alguns mods sugeridos têm orientações adicionais de seus autores e podem não ser necessários em todos os casos.",
+    "prompt": "Revise as notas abaixo e escolha quais mods deseja instalar.",
+    "required_for": "Para os mods:",
+    "buttons": {
+      "cancel": "Cancelar",
+      "install": "Instalar itens selecionados ({{count}})"
     }
   }
 }
