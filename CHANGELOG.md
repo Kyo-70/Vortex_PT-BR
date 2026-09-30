@@ -1,5 +1,12 @@
 # Histórico de alterações
 
+## 1.6.15
+
+- Atualiza a Verificação de integridade com 12 novas mensagens.
+- Adiciona 27 traduções do Vortex, incluindo mensagens de plugins e da extensão oficial de The Witcher 3.
+- Corrige interpolação, trechos danificados e traduções em espanhol ou com erros de redação.
+- Registra as fontes e linhas analisadas em `docs/auditoria-traducao.md`.
+
 ## 1.6.14
 
 - Mantém as strings do Vortex em seus arquivos de idioma correspondentes, com as strings principais em `common.json`.
