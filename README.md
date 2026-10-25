@@ -55,7 +55,7 @@ Consulte `CONTRIBUTING.md` para adicionar traduções, preservar variáveis e va
 
 O pacote ZIP é criado por `scripts/build-package.bat` ou `python scripts/build_package.py`. Cada release contém dois anexos: o ZIP da tradução e `Vortex_PT-BR_Launcher.exe`. O GitHub também exibe automaticamente links separados para baixar o código-fonte.
 
-Para publicar uma nova versão, atualize `version` em `resources/locales/pt-BR/info.json`, envie as alterações e crie uma tag como `v1.6.15`. Para atualizar uma tag existente, execute **Actions > Validate and build translation > Run workflow** e informe a tag em `release_tag`.
+Para publicar uma nova versão, atualize `version` em `resources/locales/pt-BR/info.json` e envie as alterações para `main`. O GitHub Actions cria a release correspondente, anexa o ZIP da tradução e compila e anexa o launcher. Se a release da versão já existir, execute **Actions > Validate and build translation > Run workflow** e informe a tag em `release_tag` para atualizar os anexos.
 
 ## Origem
 

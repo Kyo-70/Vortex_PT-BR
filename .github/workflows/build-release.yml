@@ -40,6 +40,19 @@ jobs:
           path: dist/*
           if-no-files-found: error
 
+      - name: Publish new version from main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(python -c 'import json; print(json.load(open("resources/locales/pt-BR/info.json", encoding="utf-8"))["version"])')
+          tag="v${version}"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release $tag already exists."
+          else
+            gh release create "$tag" dist/*.zip --target "$GITHUB_SHA" --title "Vortex PT-BR $tag" --generate-notes
+          fi
+
       - name: Create release for manual launcher publishing when needed
         if: github.event_name == 'workflow_dispatch' && inputs.release_tag != ''
         env:
@@ -95,14 +108,20 @@ jobs:
           Move-Item "dist/launcher/Vortex_PT-BR_Launcher.exe" "dist/Vortex_PT-BR_Launcher.exe" -Force
 
       - name: Attach launcher to release
-        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
+        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '') || (github.event_name == 'push' && github.ref == 'refs/heads/main')
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.release_tag }}
         shell: pwsh
         run: |
           $tag = $env:RELEASE_TAG
-          if ([string]::IsNullOrWhiteSpace($tag)) { $tag = $env:GITHUB_REF_NAME }
+          if ([string]::IsNullOrWhiteSpace($tag)) {
+            $tag = $env:GITHUB_REF_NAME
+            if ($tag -eq "main") {
+              $version = (Get-Content "resources/locales/pt-BR/info.json" -Raw | ConvertFrom-Json).version
+              $tag = "v$version"
+            }
+          }
           $zip = Get-ChildItem "dist/Vortex_PT-BR_*.zip" | Select-Object -First 1
           if ($null -eq $zip) { throw "The translation ZIP was not built." }
 
