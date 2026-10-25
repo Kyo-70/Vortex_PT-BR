@@ -1,3 +1,23 @@
 {
-  "Mods": "Mods"
+  "Mods": "Mods",
+  "collection_update_warning": {
+    "cancel": "Cancelar",
+    "single": {
+      "title": "Atualizar este mod?",
+      "intro": "Este mod faz parte das seguintes coleções:",
+      "curator_version": "Essas coleções usam uma versão escolhida por quem as criou.",
+      "caution": "Se a pessoa responsável pela coleção recomendar esta atualização, você pode continuar. Caso contrário, a atualização pode impedir que a coleção funcione como esperado.",
+      "acknowledge": "Entendo que atualizar este mod pode afetar minha coleção.",
+      "update_anyway": "Atualizar mesmo assim"
+    },
+    "batch": {
+      "title": "Atualizar estes mods?",
+      "intro": "Alguns destes mods fazem parte das seguintes coleções:",
+      "curator_version": "Essas coleções usam uma versão escolhida por quem as criou.",
+      "caution": "Se a pessoa responsável pelas coleções recomendar estas atualizações, você pode continuar. Caso contrário, as atualizações podem impedir que as coleções funcionem como esperado.",
+      "acknowledge": "Entendo que atualizar estes mods pode afetar minha coleção.",
+      "update_all": "Atualizar todos",
+      "update_non_collection": "Atualizar mods fora das coleções"
+    }
+  }
 }

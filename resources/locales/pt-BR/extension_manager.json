@@ -1,3 +1,13 @@
 {
-  "Extensions": "Extensões"
+  "Extensions": "Extensões",
+  "linkDialog": {
+    "title": "Atualizações de extensões do Vortex disponíveis",
+    "intro": "O Vortex encontrou extensões instaladas sem uma origem conhecida e identificou possíveis substitutas no Nexus Mods.",
+    "select": "Selecione as extensões que deseja substituir. As extensões não selecionadas permanecerão como estão, e esta pergunta não será exibida novamente para elas.",
+    "replaceWith": "Substituir por",
+    "buttons": {
+      "later": "Mais tarde",
+      "update": "Atualizar selecionadas"
+    }
+  }
 }

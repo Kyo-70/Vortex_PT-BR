@@ -7,6 +7,7 @@
     "or": "Ou"
   },
   "shared": {
+    "mod_may_be_required_for": "O mod ausente pode ser necessário para: {{modName}}",
     "requires_files": "É necessário instalar mais {{ count }} arquivo de mod para funcionar corretamente:",
     "requires_files_plural": "É necessário instalar mais {{ count }} arquivos de mod para funcionar corretamente:",
     "requires_pick": "É necessário selecionar mais {{ count }} arquivo de mod para funcionar corretamente:",

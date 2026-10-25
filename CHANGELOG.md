@@ -1,5 +1,12 @@
 # Histórico de alterações
 
+## 1.6.16
+
+- Atualiza a tradução para o Vortex oficial na revisão `cf009c405974332195f68a76d0fb386f1ecb5d98` (24/10/2026).
+- Adiciona 143 mensagens em PT-BR: 21 nos catálogos de extensões, gerenciamento de mods e Verificação de integridade, além de 122 chamadas de interface em `common.json`.
+- Revê quatro traduções existentes e preserva variáveis, nomes de recursos e tags de formatação.
+- Registra a comparação e os limites da verificação em `docs/auditoria-2026-10-25.md`.
+
 ## 1.6.15
 
 - Atualiza a Verificação de integridade com 12 novas mensagens.
