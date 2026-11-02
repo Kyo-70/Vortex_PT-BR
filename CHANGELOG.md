@@ -1,5 +1,12 @@
 # Histórico de alterações
 
+## 1.6.17
+
+- Atualiza a tradução para a revisão oficial `9482caf996f16eb51c5e0664349fefc5bc072327` (01/11/2026).
+- Traduz as 15 mensagens do instalador manual no catálogo `mod_management.json` e 51 novas mensagens literais da interface, inclusive navegação de mods, ordenação, LOOT e atualização do Vortex.
+- Recupera 2.066 entradas PT-BR que estavam na instalação local e faltavam no repositório, preservando as traduções já mantidas na versão 1.6.16.
+- Registra a comparação e a validação em `docs/auditoria-2026-11-01.md`.
+
 ## 1.6.16
 
 - Atualiza a tradução para o Vortex oficial na revisão `cf009c405974332195f68a76d0fb386f1ecb5d98` (24/10/2026).

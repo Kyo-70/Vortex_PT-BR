@@ -1,0 +1,5 @@
+{
+  "Clean up empty directories": "Limpar pastas vazias",
+  "Clean up empty directories during deployment": "Remover pastas vazias durante a implantação",
+  "By default Vortex will only remove empty directories during deployment if the game or related tools would otherwise not work correctly. Usually empty directories cause no harm and cleaning them up takes some extra time during deployment so we advise you only enable this option if you're experiencing problems we didn't anticipate. In that case please also inform us.": "Por padrão, o Vortex só remove pastas vazias durante a implantação quando isso é necessário para que o jogo ou suas ferramentas funcionem. Pastas vazias normalmente não causam problemas, mas removê-las aumenta o tempo de implantação. Ative esta opção somente se encontrar algum problema inesperado; nesse caso, informe a equipe do Vortex."
+}

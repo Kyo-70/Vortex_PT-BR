@@ -93,11 +93,86 @@
       "title": "A navegação de mods chegará em breve",
       "description": "Em breve, você poderá navegar pelos mods diretamente no Vortex. Até lá, visite o Nexus Mods para descobrir e baixar mods.",
       "openWebsite": "Abrir o site do Nexus Mods"
-    }
+    },
+    "loading": "Carregando coleções...",
+    "error": "Não foi possível carregar as coleções",
+    "search": "Pesquisar coleções",
+    "actions": {
+      "add": "Adicionar coleção",
+      "viewPage": "Ver página",
+      "create": "Criar coleção"
+    },
+    "sort": {
+      "mostEndorsed": "Mais endossadas",
+      "dateDownloaded": "Data do download",
+      "sortBy": "Ordenar por"
+    },
+    "discoverMore": "Descobrir mais coleções",
+    "discoverMoreCollections": "Descobrir mais coleções"
   },
   "pagination": {
     "goTo": "Ir para:",
     "pageNumber": "Número da página",
     "go": "Ir"
+  },
+  "actions": {
+    "install": "Instalar coleção",
+    "browse": "Explorar coleções",
+    "add": "Adicionar coleção",
+    "viewPage": "Ver página",
+    "create": "Criar coleção",
+    "createCollection": "Criar uma coleção"
+  },
+  "Added collections": "Coleções adicionadas",
+  "View and manage collections created by other users": "Veja e gerencie coleções criadas por outros usuários",
+  "Discover More Collections": "Descobrir mais coleções",
+  "Sort by:": "Ordenar por:",
+  "Sort by": "Ordenar por",
+  "Date downloaded": "Data do download",
+  "Date Downloaded": "Data do download",
+  "Most Endorsed": "Mais endossadas",
+  "Most endorsed": "Mais endossadas",
+  "Add collection": "Adicionar coleção",
+  "Add Collection": "Adicionar coleção",
+  "View page": "Ver página",
+  "View Page": "Ver página",
+  "Download date": "Data do download",
+  "Collection added": "Coleção adicionada",
+  "Add collections": "Adicionar coleções",
+  "Collections": "Coleções",
+  "Search collections...": "Pesquisar coleções...",
+  "{{total}} results": "{{total}} resultados",
+  "{{total}} results found": "{{total}} resultados encontrados",
+  "No collections found": "Nenhuma coleção encontrada",
+  "Collection installed": "Coleção instalada",
+  "Refresh": "Atualizar",
+  "Update": "Atualizar",
+  "Total Overhaul": "Reformulação completa",
+  "Vanilla Plus": "Vanilla Plus",
+  "Adult": "Adulto",
+  "Themed": "Temática",
+  "Build your own collections and share them with the Nexus Mods community. You can view all your uploaded collections here.": "Crie suas próprias coleções e compartilhe-as com a comunidade do Nexus Mods. Veja aqui todas as coleções que você publicou.",
+  "Build your own collections and share them with the Nexus Mods community. You can view all your uploaded collections here": "Crie suas próprias coleções e compartilhe-as com a comunidade do Nexus Mods. Veja aqui todas as coleções que você publicou",
+  "Create a Collection": "Criar uma coleção",
+  "Create Collection": "Criar coleção",
+  "Date created": "Data de criação",
+  "Date Created": "Data de criação",
+  "Recently updated": "Atualizados recentemente",
+  "Recently Updated": "Atualizados recentemente",
+  "Name: A-Z": "Nome: A-Z",
+  "Name A-Z": "Nome: A-Z",
+  "Name: A–Z": "Nome: A-Z",
+  "View uploaded collections": "Ver coleções publicadas",
+  "Your collections": "Suas coleções",
+  "workshop": {
+    "title": "Oficina",
+    "create": "Criar uma coleção",
+    "createCollection": "Criar uma coleção",
+    "description": "Crie suas próprias coleções e compartilhe-as com a comunidade do Nexus Mods. Veja aqui todas as coleções que você publicou.",
+    "sort": {
+      "dateCreated": "Data de criação",
+      "recentlyUpdated": "Atualizados recentemente",
+      "nameAZ": "Nome: A-Z"
+    }
   }
 }
